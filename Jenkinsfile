@@ -13,5 +13,10 @@ bat '''
 mvn test
 '''
 }
+stage('build'){
+bat '''
+mvn package
+'''
+}
 
 }
