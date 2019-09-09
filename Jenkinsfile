@@ -18,5 +18,10 @@ bat '''
 mvn package
 '''
 }
+stage('archive'){
+bat '''
+archiveArtifacts '**/*.war'
+'''
+}
 
 }
